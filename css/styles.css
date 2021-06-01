@@ -199,6 +199,27 @@ p {
   padding-bottom: 60px;
   text-align: start;
 }
+.footer-container {
+  display: flex;
+}
+.social-list-footer {
+  display: flex;
+}
+.social-list-item-link-footer {
+  background: rgba(255, 255, 255, 0.1);
+}
+.join-us-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.143;
+  color: var(--main-white-color);
+
+  margin-bottom: 20px;
+}
+.join-us {
+  margin-left: 70px;
+  padding-top: 12px;
+}
 /*Герой */
 .hero-title {
   font-weight: 900;
@@ -286,14 +307,24 @@ p {
   margin-left: var(--card-margin);
   margin-top: var(--card-margin);
 }
-/*.advantages-list-item {
-  width: calc((100% - 3 * var(--card-margin)) / 4);
+.advantages-icon {
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--grey-color);
+  border-radius: 4px;
+  display: flex;
+  margin-left: auto;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
 }
-
-.advantages-list-item:not(:nth-child(4n)) {
-  margin-right: var(--card-margin);
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+  width: 70px;
+  height: 70px;
 }
-*/
 /*Чем мы занимаемся*/
 .section-title {
   font-size: 36px;
@@ -331,13 +362,16 @@ p {
   margin-left: var(--card-margin);
   margin-top: var(--card-margin);
   background-color: var(--main-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-list {
   margin-left: calc(-1 * var(--card-margin));
   margin-top: calc(-1 * var(--card-margin));
 }
 
-.social-list {
+.social-list,
+.client-list {
   display: flex;
   justify-content: center;
 }
@@ -375,6 +409,39 @@ p {
 .works-list {
   margin-left: calc(-1 * var(--card-margin));
   margin-top: calc(-1 * var(--card-margin));
+}
+/*Постоянные клиенты*/
+.clients-title {
+  font-size: 36px;
+  line-height: 1/167;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+.client-list-item + .client-list-item {
+  margin-left: 30px;
+}
+.client-list-item-link {
+  width: 170px;
+  height: 92px;
+  display: inline-block;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--social-link-color);
+  border: 1px solid var(--social-link-color);
+  border-radius: 4px;
+}
+.client-list-item-link:hover,
+.client-list-item-link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+.client-icon {
+  fill: currentColor;
+  height: 60px;
+  width: 106px;
 }
 /*портфолио*/
 /*фильтф*/
@@ -421,10 +488,20 @@ p {
   padding-right: 24px;
   padding-left: 24px;
 }
+
 .projects-list-item {
   flex-basis: calc((100% - 3 * var(--card-margin)) / 3);
   margin-left: var(--card-margin);
   margin-top: var(--card-margin);
+}
+.projects-list-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.filter-list-item:hover,
+.filter-list-item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .projects-list {
   margin-left: calc(-1 * var(--card-margin));
