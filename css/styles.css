@@ -383,12 +383,11 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--social-link-color);
+  color: var(--main-white-color);
 }
 .social-list-item-link:hover,
 .social-list-item-link:focus {
   background-color: var(--accent-color);
-  color: var(--main-white-color);
 }
 .social-list-item + .social-list-item {
   margin-left: 10px;
