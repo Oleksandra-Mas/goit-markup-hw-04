@@ -207,6 +207,18 @@ p {
 }
 .social-list-item-link-footer {
   background: rgba(255, 255, 255, 0.1);
+  color: var(--main-white-color);
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-list-item-link-footer:hover,
+.social-list-item-link-footer:focus {
+  background-color: var(--accent-color);
 }
 .join-us-title {
   text-transform: uppercase;
@@ -228,7 +240,10 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-white-color);
+  width: 696px;
+  justify-self: center;
 
+  margin: auto;
   margin-bottom: 30px;
 }
 .hero-container {
@@ -383,11 +398,12 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--main-white-color);
+  color: var(--social-link-color);
 }
 .social-list-item-link:hover,
 .social-list-item-link:focus {
   background-color: var(--accent-color);
+  color: var(--main-white-color);
 }
 .social-list-item + .social-list-item {
   margin-left: 10px;
